@@ -1,0 +1,1476 @@
+/* =====================================================
+   GLOBAL STYLES
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eeeeee;
+    color: #444;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+header {
+    background: white;
+}
+
+
+/* =====================================================
+   TOP HEADER
+===================================================== */
+
+.top-header {
+    max-width: 1100px;
+    margin: auto;
+    height: 80px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+
+    position: relative;
+}
+
+.logo span {
+    font-weight: normal;
+}
+
+.logo b {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #1971ae;
+    color: white;
+
+    width: 52px;
+    height: 52px;
+
+    border-radius: 50%;
+}
+
+.logo small {
+    position: absolute;
+
+    font-size: 8px;
+
+    color: white;
+
+    right: 11px;
+    bottom: 7px;
+}
+
+
+
+.header-right {
+    display: flex;
+
+    align-items: center;
+
+    gap: 50px;
+}
+
+
+/* SUPPORT */
+
+.support {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.support i {
+    background: #777;
+
+    color: white;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.support small {
+    font-size: 10px;
+}
+
+.support p {
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   WEBSITE SEARCH
+===================================================== */
+
+.search-box {
+    border: 1px solid #ddd;
+
+    border-radius: 20px;
+
+    padding: 8px 12px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+.search-box input {
+    border: none;
+
+    outline: none;
+
+    width: 190px;
+
+    font-size: 11px;
+}
+
+.search-box i {
+    color: #aaa;
+}
+
+
+/* =====================================================
+   MOBILE MENU BUTTON
+===================================================== */
+
+.menu-btn {
+    display: none;
+
+    border: none;
+
+    background: #1872ad;
+
+    color: white;
+
+    font-size: 20px;
+
+    padding: 9px 12px;
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+nav {
+    background: #1471ad;
+}
+
+.nav-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 20px;
+}
+
+
+/* NAV LINKS */
+
+.nav-container > a,
+.hotel-link {
+    display: block;
+
+    color: white;
+
+    font-size: 12px;
+
+    padding: 13px 24px;
+}
+
+.nav-container > a:hover,
+.hotel-link:hover {
+    background: #105d8e;
+}
+
+
+/* =====================================================
+   HOTEL DROPDOWN
+===================================================== */
+
+.hotel-menu {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    width: 215px;
+
+    background: white;
+
+    z-index: 100;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown a {
+    display: block;
+
+    color: #555;
+
+    padding: 11px 14px;
+
+    font-size: 11px;
+
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown a:hover {
+    background: #f1f1f1;
+
+    color: #1471ad;
+}
+
+.hotel-menu:hover .dropdown {
+    display: block;
+}
+
+
+/* =====================================================
+   NAVIGATION BUTTONS
+===================================================== */
+
+.nav-buttons {
+    margin-left: auto;
+
+    display: flex;
+
+    gap: 10px;
+}
+
+.nav-buttons button {
+    border: none;
+
+    background: #f7c500;
+
+    color: #555;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    padding: 8px 15px;
+}
+
+.nav-buttons button:hover {
+    background: #e5b900;
+}
+
+
+/* =====================================================
+   HERO SECTION
+===================================================== */
+
+.hero {
+    min-height: 430px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.05),
+            rgba(0, 0, 0, 0.05)
+        ),
+        url("header imge.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    position: relative;
+}
+
+
+/* =====================================================
+   HERO TEXT
+===================================================== */
+
+.hero-overlay {
+    position: absolute;
+
+    right: 15%;
+
+    top: 120px;
+
+    width: 390px;
+
+    background: rgba(13, 93, 150, 0.90);
+
+    color: white;
+
+    padding: 18px;
+}
+
+.hero-overlay h2 {
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+.hero-overlay p {
+    font-size: 12px;
+
+    line-height: 1.6;
+}
+
+
+/* PRICE */
+
+.price {
+    margin-top: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.price strong {
+    font-size: 25px;
+}
+
+.price span {
+    font-size: 10px;
+}
+
+
+/* =====================================================
+   BOOKING BOX
+===================================================== */
+
+.booking-box {
+    position: absolute;
+
+    bottom: -5px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 75%;
+
+    max-width: 1000px;
+
+    background: white;
+
+    border: 5px solid rgba(0, 0, 0, 0.7);
+
+    padding: 18px 20px;
+}
+
+
+/* BOOKING TITLE */
+
+.booking-box h3 {
+    position: absolute;
+
+    top: -34px;
+
+    left: 15px;
+
+    background: rgba(0, 0, 0, 0.75);
+
+    color: white;
+
+    padding: 8px 25px;
+
+    font-size: 13px;
+}
+
+
+/* BOOKING FORM */
+
+.booking-form {
+    display: flex;
+
+    align-items: flex-end;
+
+    gap: 8px;
+}
+
+
+/* FORM GROUP */
+
+.form-group {
+    flex: 1;
+}
+
+.form-group label {
+    display: block;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+/* INPUT AND SELECT */
+
+.form-group input,
+.form-group select {
+    width: 100%;
+
+    height: 32px;
+
+    border: 1px solid #ddd;
+
+    padding: 5px;
+
+    color: #777;
+
+    font-size: 11px;
+
+    outline: none;
+
+    background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #1972ac;
+}
+
+
+/* SEARCH BUTTON */
+
+.search-btn {
+    height: 32px;
+
+    border: none;
+
+    background: #e34b63;
+
+    color: white;
+
+    padding: 0 20px;
+
+    font-size: 10px;
+
+    font-weight: bold;
+}
+
+.search-btn:hover {
+    background: #d23852;
+}
+
+
+/* =====================================================
+   MY BOOKING LIST
+===================================================== */
+
+.booking-list-section {
+    max-width: 1100px;
+
+    margin: 30px auto;
+
+    padding: 25px 20px;
+}
+
+.booking-list-section h2 {
+    font-size: 18px;
+
+    color: #444;
+
+    margin-bottom: 20px;
+}
+
+
+/* BOOKING LIST */
+
+#bookingList {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* EMPTY MESSAGE */
+
+#emptyMessage {
+    grid-column: 1 / -1;
+
+    background: white;
+
+    padding: 20px;
+
+    text-align: center;
+
+    color: #888;
+
+    font-size: 13px;
+
+    border: 1px solid #ddd;
+}
+
+
+/* =====================================================
+   BOOKING CARD
+===================================================== */
+
+.booking-item {
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 4px;
+
+    border-top: 4px solid #1972ac;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s;
+}
+
+.booking-item:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.18);
+}
+
+
+/* BOOKING CARD TITLE */
+
+.booking-item h3 {
+    color: #1972ac;
+
+    font-size: 16px;
+
+    margin-bottom: 15px;
+
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #eee;
+}
+
+
+/* BOOKING DETAILS */
+
+.booking-item p {
+    font-size: 13px;
+
+    color: #666;
+
+    margin-bottom: 10px;
+}
+
+.booking-item p b {
+    color: #333;
+}
+
+
+
+
+.booking-item button {
+    width: 100%;
+
+    margin-top: 10px;
+
+    padding: 9px 15px;
+
+    border: none;
+
+    background: #e34b63;
+
+    color: white;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.booking-item button:hover {
+    background: #c9324b;
+}
+
+
+
+main {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 30px 20px;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+
+
+
+.section > h2,
+.section-heading h2 {
+    font-size: 16px;
+
+    margin-bottom: 20px;
+
+    color: #444;
+}
+
+
+
+
+.section-heading {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+
+
+.slider-btn {
+    border: none;
+
+    background: #ccc;
+
+    color: #666;
+
+    border-radius: 50%;
+
+    width: 30px;
+
+    height: 30px;
+
+    margin-left: 5px;
+}
+
+.slider-btn:hover {
+    background: #aaa;
+
+    color: white;
+}
+
+
+
+
+.hotel-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 35px;
+}
+
+
+
+
+.hotel-card {
+    background: white;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s;
+}
+
+.hotel-card:hover {
+    transform: translateY(-5px);
+}
+
+
+
+
+.hotel-card img {
+    width: 100%;
+
+    height: 160px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+
+
+.hotel-info {
+    padding: 12px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+
+.hotel-info h3 {
+    color: #226696;
+
+    font-size: 13px;
+
+    margin-bottom: 5px;
+}
+
+
+
+.hotel-info p {
+    font-size: 10px;
+
+    color: #888;
+}
+
+
+
+.hotel-price {
+    background: #1972ac;
+
+    color: white;
+
+    padding: 8px 15px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+
+
+.deals-container {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+}
+
+
+
+.deal-card {
+    height: 180px;
+
+    position: relative;
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+
+    overflow: hidden;
+}
+
+
+
+.deal-one {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.4)
+        ),
+        url("sale.jpg");
+}
+
+
+/* DEAL 2 */
+
+.deal-two {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.4)
+        ),
+        url("trip.jpg");
+}
+
+
+
+
+.sale {
+    position: absolute;
+
+    left: -28px;
+
+    top: 20px;
+
+    background: #f44336;
+
+    padding: 8px 40px;
+
+    transform: rotate(-45deg);
+
+    font-size: 11px;
+}
+
+
+
+
+.gift {
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    background: #e94d64;
+
+    padding: 12px 15px;
+
+    font-size: 22px;
+}
+
+
+
+
+.deal-text {
+    position: absolute;
+
+    right: 20px;
+
+    bottom: 25px;
+
+    text-align: right;
+}
+
+.deal-text small {
+    font-size: 10px;
+}
+
+.deal-text h3 {
+    font-size: 22px;
+
+    margin: 5px 0;
+}
+
+.deal-text p {
+    font-size: 10px;
+}
+
+
+
+
+.blog-bar {
+    background: white;
+
+    padding: 20px;
+
+    display: flex;
+
+    gap: 30px;
+
+    font-size: 12px;
+}
+
+.blog-bar span {
+    font-weight: bold;
+}
+
+.blog-bar a {
+    color: #777;
+}
+
+.blog-bar a:hover {
+    color: #1972ac;
+}
+
+
+
+footer {
+    background: white;
+
+    margin-top: 10px;
+
+    padding: 40px 20px;
+}
+
+
+/* FOOTER CONTAINER */
+
+.footer-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+
+    gap: 40px;
+}
+
+
+/* FOOTER TITLE */
+
+.footer-column h3 {
+    font-size: 14px;
+
+    margin-bottom: 15px;
+}
+
+
+/* FOOTER LINKS */
+
+.footer-column a {
+    display: block;
+
+    font-size: 11px;
+
+    color: #777;
+
+    margin-bottom: 8px;
+}
+
+.footer-column a:hover {
+    color: #1972ac;
+}
+
+
+
+.social-icons {
+    display: flex;
+
+    gap: 7px;
+}
+
+.social-icons i {
+    background: #777;
+
+    color: white;
+
+    width: 25px;
+
+    height: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    font-size: 11px;
+}
+
+.social-icons i:hover {
+    background: #1972ac;
+}
+
+
+
+
+.subscribe {
+    display: flex;
+}
+
+.subscribe input {
+    flex: 1;
+
+    border: 1px solid #ddd;
+
+    padding: 10px;
+
+    outline: none;
+
+    font-size: 11px;
+}
+
+.subscribe input:focus {
+    border-color: #1972ac;
+}
+
+.subscribe button {
+    border: none;
+
+    background: #1672ae;
+
+    color: white;
+
+    padding: 10px 20px;
+
+    font-size: 9px;
+
+    font-weight: bold;
+}
+
+.subscribe button:hover {
+    background: #105d8e;
+}
+
+
+
+
+.copyright {
+    max-width: 1100px;
+
+    margin: 45px auto 0;
+
+    font-size: 10px;
+
+    color: #aaa;
+
+    text-align: center;
+}
+
+
+
+
+@media (max-width: 900px) {
+
+
+    /* HEADER */
+
+    .header-right {
+        gap: 15px;
+    }
+
+
+    .search-box {
+        display: none;
+    }
+
+
+
+
+    .nav-container > a,
+    .hotel-link {
+        padding: 13px 12px;
+    }
+
+
+   
+
+    .hero-overlay {
+        right: 5%;
+
+        width: 350px;
+    }
+
+
+    
+
+    .booking-box {
+        width: 90%;
+    }
+
+    .booking-form {
+        flex-wrap: wrap;
+    }
+
+    .form-group {
+        min-width: 30%;
+    }
+
+
+
+    .hotel-container {
+        gap: 20px;
+    }
+
+
+    
+
+    #bookingList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* FOOTER */
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+
+@media (max-width: 700px) {
+
+
+
+    .top-header {
+        height: 70px;
+    }
+
+
+    .header-right {
+        display: none;
+    }
+
+
+    .menu-btn {
+        display: block;
+    }
+
+
+    nav {
+        display: none;
+    }
+
+
+    nav.active {
+        display: block;
+    }
+
+
+    .nav-container {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        padding: 0;
+    }
+
+
+    .nav-container > a,
+    .hotel-link {
+        padding: 14px 20px;
+
+        border-bottom:
+            1px solid rgba(255, 255, 255, 0.15);
+    }
+
+
+    
+
+    .hotel-menu:hover .dropdown {
+        display: none;
+    }
+
+
+    .dropdown {
+        position: static;
+
+        width: 100%;
+    }
+
+
+    .hotel-menu.open .dropdown {
+        display: block;
+    }
+
+
+   
+
+    .nav-buttons {
+        margin: 10px 20px;
+
+        display: flex;
+    }
+
+
+
+
+    .hero {
+        min-height: 700px;
+    }
+
+
+    .hero-overlay {
+        top: 60px;
+
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        width: 90%;
+    }
+
+
+    .hero-overlay h2 {
+        font-size: 20px;
+    }
+
+
+
+    .booking-box {
+        bottom: 20px;
+
+        width: 90%;
+
+        padding: 20px;
+    }
+
+
+    .booking-form {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .form-group {
+        width: 100%;
+
+        min-width: 100%;
+    }
+
+
+    .form-group input,
+    .form-group select {
+        height: 40px;
+
+        font-size: 13px;
+    }
+
+
+    .search-btn {
+        width: 100%;
+
+        height: 40px;
+
+        margin-top: 10px;
+
+        font-size: 12px;
+    }
+
+
+    /* =================================================
+       BOOKING LIST
+    ================================================= */
+
+    .booking-list-section {
+        padding: 20px;
+
+        margin-top: 20px;
+    }
+
+
+    .booking-list-section h2 {
+        font-size: 17px;
+    }
+
+
+    #bookingList {
+        grid-template-columns: 1fr;
+    }
+
+
+    .booking-item {
+        padding: 18px;
+    }
+
+
+    /* =================================================
+       HOTELS
+    ================================================= */
+
+    .hotel-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .hotel-card img {
+        height: 220px;
+    }
+
+
+    /* =================================================
+       HOT DEALS
+    ================================================= */
+
+    .deals-container {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .deal-card {
+        height: 200px;
+    }
+
+
+    /* =================================================
+       BLOG
+    ================================================= */
+
+    .blog-bar {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+
+    /* =================================================
+       FOOTER
+    ================================================= */
+
+    .footer-container {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+
+    .subscribe {
+        width: 100%;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 400px) {
+
+
+    /* LOGO */
+
+    .logo {
+        font-size: 18px;
+    }
+
+
+    .logo b {
+        width: 45px;
+
+        height: 45px;
+    }
+
+
+    .logo small {
+        right: 9px;
+
+        bottom: 6px;
+    }
+
+
+    /* HERO */
+
+    .hero-overlay h2 {
+        font-size: 18px;
+    }
+
+
+    .hero-overlay p {
+        font-size: 11px;
+    }
+
+
+    /* MAIN */
+
+    main {
+        padding: 25px 15px;
+    }
+
+
+    /* BOOKING */
+
+    .booking-box {
+        padding: 15px;
+    }
+
+
+    .booking-box h3 {
+        left: 10px;
+
+        font-size: 11px;
+
+        padding: 7px 18px;
+    }
+
+
+    /* HOTEL IMAGE */
+
+    .hotel-card img {
+        height: 180px;
+    }
+
+
+    /* DEAL */
+
+    .deal-text h3 {
+        font-size: 17px;
+    }
+
+
+    .deal-text p {
+        font-size: 9px;
+    }
+
+
+    /* NEWSLETTER */
+
+    .subscribe {
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+
+    .subscribe input {
+        width: 100%;
+
+        height: 40px;
+    }
+
+
+    .subscribe button {
+        width: 100%;
+
+        padding: 12px;
+    }
+
+
+    /* BOOKING CARD */
+
+    .booking-item h3 {
+        font-size: 15px;
+    }
+
+
+    .booking-item p {
+        font-size: 12px;
+    }
+
+}

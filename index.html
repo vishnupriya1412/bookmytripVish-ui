@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>BookMyTrip</title>
+
+   
+    <link rel="stylesheet" href="bookmytripstyle.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+
+
+<header>
+
+    <div class="top-header">
+
+        <!-- LOGO -->
+
+        <div class="logo">
+
+            <span>bookmy</span>
+
+            <b>trip</b>
+
+            <small>.com</small>
+
+        </div>
+
+
+     
+
+        <div class="header-right">
+
+           
+
+            <div class="support">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <div>
+
+                    <small>Call 24/7 Support</small>
+
+                    <p>+91 (44) 1234 5678</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- WEBSITE SEARCH -->
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    placeholder="Search entire website here"
+                >
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </div>
+
+        </div>
+
+
+        <!-- MOBILE MENU BUTTON -->
+
+        <button
+            class="menu-btn"
+            id="menuBtn"
+            type="button"
+        >
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         NAVIGATION
+    ===================================================== -->
+
+    <nav id="navbar">
+
+        <div class="nav-container">
+
+
+            <!-- HOTEL DROPDOWN -->
+
+            <div class="hotel-menu">
+
+                <a href="#" class="hotel-link">
+                    Hotels
+                </a>
+
+
+                <div class="dropdown">
+
+                    <a href="#">Hotels in India</a>
+
+                    <a href="#">International Hotels</a>
+
+                    <a href="#">International Hostels</a>
+
+                    <a href="#">Popular Hotels in Asia</a>
+
+                    <a href="#">Popular Hotels in Europe</a>
+
+                    <a href="#">ACTIVITIES</a>
+
+                    <a href="#">Hotel Deals of the Week</a>
+
+                </div>
+
+            </div>
+
+
+            <a href="#">Flights</a>
+
+            <a href="#">Vacations</a>
+
+            <a href="#">Hot Deals</a>
+
+            <a href="#">Travel Guides</a>
+
+            <a href="#">Blogs</a>
+
+
+            <!-- NAVIGATION BUTTONS -->
+
+            <div class="nav-buttons">
+
+                <button
+                    class="signup"
+                    type="button"
+                >
+                    SIGN UP
+                </button>
+
+
+                <button
+                    class="account"
+                    type="button"
+                >
+                    MY ACCOUNT
+                </button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO SECTION
+===================================================== -->
+
+<section class="hero">
+
+
+    <!-- HERO TEXT -->
+
+    <div class="hero-overlay">
+
+        <h2>
+            Lorem ipsum dolor sit amet.
+        </h2>
+
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur
+            adipisicing elit.
+        </p>
+
+
+        <div class="price">
+
+            <strong>1200</strong>
+
+            <span>
+                with food, dinner
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         BOOK YOUR TRIP
+    ===================================================== -->
+
+    <div class="booking-box">
+
+        <h3>Book Your Trip</h3>
+
+
+        <div class="booking-form">
+
+
+            <!-- BOOKING TYPE -->
+
+            <div class="form-group">
+
+                <label>What?</label>
+
+                <select id="bookingType">
+
+                    <option value="Hotel">
+                        Hotel
+                    </option>
+
+                    <option value="Flight">
+                        Flight
+                    </option>
+
+                    <option value="Vacation">
+                        Vacation
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- LOCATION -->
+
+            <div class="form-group">
+
+                <label>Where?</label>
+
+                <input
+                    type="text"
+                    id="destination"
+                    placeholder="Location"
+                >
+
+            </div>
+
+
+
+            <!-- DATE -->
+
+            <div class="form-group">
+
+                <label>When?</label>
+
+                <input
+                    type="date"
+                    id="travelDate"
+                >
+
+            </div>
+
+
+
+            <!-- ROOMS -->
+
+            <div class="form-group">
+
+                <label>What?</label>
+
+                <select id="rooms">
+
+                    <option value="">
+                        Rooms
+                    </option>
+
+                    <option value="1 Room">
+                        1 Room
+                    </option>
+
+                    <option value="2 Rooms">
+                        2 Rooms
+                    </option>
+
+                    <option value="3 Rooms">
+                        3 Rooms
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- ADULTS -->
+
+            <div class="form-group">
+
+                <label>&nbsp;</label>
+
+                <select id="adults">
+
+                    <option value="">
+                        Adults
+                    </option>
+
+                    <option value="1 Adult">
+                        1 Adult
+                    </option>
+
+                    <option value="2 Adults">
+                        2 Adults
+                    </option>
+
+                    <option value="3 Adults">
+                        3 Adults
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- CHILDREN -->
+
+            <div class="form-group">
+
+                <label>&nbsp;</label>
+
+                <select id="children">
+
+                    <option value="">
+                        Children
+                    </option>
+
+                    <option value="0 Children">
+                        0 Children
+                    </option>
+
+                    <option value="1 Child">
+                        1 Child
+                    </option>
+
+                    <option value="2 Children">
+                        2 Children
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- SEARCH BUTTON -->
+
+            <button
+                type="button"
+                class="search-btn"
+                id="searchBtn"
+            >
+
+                SEARCH
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     MY BOOKING LIST
+===================================================== -->
+
+<section class="booking-list-section">
+
+    <h2>My Booking List</h2>
+
+
+    <div id="bookingList">
+
+        <p id="emptyMessage">
+            No bookings added yet.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     MAIN CONTENT
+===================================================== -->
+
+<main>
+
+
+    <!-- =================================================
+         POPULAR HOTELS
+    ================================================= -->
+
+    <section class="section">
+
+
+        <div class="section-heading">
+
+            <h2>Popular Hotels</h2>
+
+
+            <div>
+
+                <button
+                    class="slider-btn"
+                    id="previousBtn"
+                    type="button"
+                >
+
+                    <i class="fa-solid fa-chevron-left"></i>
+
+                </button>
+
+
+                <button
+                    class="slider-btn"
+                    id="nextBtn"
+                    type="button"
+                >
+
+                    <i class="fa-solid fa-chevron-right"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- HOTEL CONTAINER -->
+
+        <div
+            class="hotel-container"
+            id="hotelContainer"
+        >
+
+
+            <!-- ================= HOTEL 1 ================= -->
+
+            <div class="hotel-card">
+
+                <img
+                    src="outisde.jpg"
+                    alt="Hotel Tajmahal Palace"
+                >
+
+
+                <div class="hotel-info">
+
+                    <div>
+
+                        <h3>
+                            Hotel Tajmahal Palace
+                        </h3>
+
+                        <p>
+                            Mumbai, India
+                        </p>
+
+                    </div>
+
+
+                    <span class="hotel-price">
+                        2000
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= HOTEL 2 ================= -->
+
+            <div class="hotel-card">
+
+                <img
+                    src="rooms.jpg"
+                    alt="Mont Blanc Hotel"
+                >
+
+
+                <div class="hotel-info">
+
+                    <div>
+
+                        <h3>
+                            Mont Blanc
+                        </h3>
+
+                        <p>
+                            Anna Nagar, Chennai
+                        </p>
+
+                    </div>
+
+
+                    <span class="hotel-price">
+                        3200
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= HOTEL 3 ================= -->
+
+            <div class="hotel-card">
+
+                <img
+                    src="hotel33.jpg"
+                    alt="Hotel Marriott"
+                >
+
+
+                <div class="hotel-info">
+
+                    <div>
+
+                        <h3>
+                            Hotel Marriott
+                        </h3>
+
+                        <p>
+                            New Delhi
+                        </p>
+
+                    </div>
+
+
+                    <span class="hotel-price">
+                        71200
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         HOT DEALS
+    ================================================= -->
+
+    <section class="section">
+
+        <h2>Hot Deals</h2>
+
+
+        <div class="deals-container">
+
+
+            <!-- DEAL 1 -->
+
+            <div class="deal-card deal-one">
+
+
+                <span class="sale">
+                    SALE
+                </span>
+
+
+                <div class="deal-text">
+
+                    <small>
+                        From 350
+                    </small>
+
+                    <h3>
+                        PARIS EUROSTAR BREAKS
+                    </h3>
+
+                    <p>
+                        Enjoy exciting European destinations
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DEAL 2 -->
+
+            <div class="deal-card deal-two">
+
+
+                <div class="gift">
+
+                    <i class="fa-solid fa-gift"></i>
+
+                </div>
+
+
+                <div class="deal-text">
+
+                    <small>
+                        Special Offer
+                    </small>
+
+                    <h3>
+                        CRUISE TRIP
+                    </h3>
+
+                    <p>
+                        Explore beautiful destinations
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         BLOG
+    ================================================= -->
+
+    <section class="blog-bar">
+
+        <span>
+            Latest Blogs
+        </span>
+
+
+        <a href="#">
+            Best places to visit in India
+        </a>
+
+    </section>
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+
+    <div class="footer-container">
+
+
+        <!-- COMPANY -->
+
+        <div class="footer-column">
+
+            <h3>Company</h3>
+
+            <a href="#">
+                About the company
+            </a>
+
+            <a href="#">
+                Terms and Conditions
+            </a>
+
+            <a href="#">
+                Privacy Policy
+            </a>
+
+            <a href="#">
+                Career
+            </a>
+
+        </div>
+
+
+
+        <!-- CUSTOMER SUPPORT -->
+
+        <div class="footer-column">
+
+            <h3>
+                Customer Support
+            </h3>
+
+            <a href="#">
+                Contact
+            </a>
+
+            <a href="#">
+                FAQ
+            </a>
+
+        </div>
+
+
+
+        <!-- SOCIAL MEDIA -->
+
+        <div class="footer-column">
+
+            <h3>
+                Follow us
+            </h3>
+
+
+            <div class="social-icons">
+
+                <i class="fa-brands fa-facebook-f"></i>
+
+                <i class="fa-brands fa-twitter"></i>
+
+                <i class="fa-brands fa-linkedin-in"></i>
+
+                <i class="fa-brands fa-youtube"></i>
+
+                <i class="fa-brands fa-google-plus-g"></i>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- NEWSLETTER -->
+
+        <div class="footer-column newsletter">
+
+            <h3>
+                Don't miss our deals and offers
+            </h3>
+
+
+            <div class="subscribe">
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email id"
+                >
+
+
+                <button
+                    id="subscribeBtn"
+                    type="button"
+                >
+
+                    SUBSCRIBE
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- COPYRIGHT -->
+
+    <div class="copyright">
+
+        Copyright © 2026.
+        All rights reserved.
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
